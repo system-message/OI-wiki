@@ -18,6 +18,9 @@
 一般出题人不会 **刻意** 卡，但是不小心卡了就……
 
 如果要保证复杂度正确，必须保证数据随机。
+
+upd by system-message at 2020.06.12:一些出题人还是会去卡，毕竟卡它也不很困难，（一直query，却没有assign，最差会让它退化到O(NM log N)复杂度），题目不说明**数据随机**请不要轻易使用ODT。
+
 证明在 [此](http://codeforces.com/blog/entry/56135?#comment-398940) 。
 补充一个更详细的严格证明： [看这里](https://zhuanlan.zhihu.com/p/102786071) 。对于 add，assign 和 sum 操作，用 set 实现的珂朵莉树的复杂度为 $O(n \log \log n)$ ，而用链表实现的复杂度为 $O(n \log n)$ 。
 
@@ -94,6 +97,7 @@ void performance(int l, int r) {
 ## 习题
 
 -    [「SCOI2010」序列操作](https://www.luogu.com.cn/problem/P2572) 
+     **注意：SCOI2010 序列操作在luogu上数据已经被加强，ODT无法通过，请使用其他算法。**
 -    [「SHOI2015」脑洞治疗仪](https://loj.ac/problem/2037) 
 -    [「Luogu 2787」理理思维](https://www.luogu.com.cn/problem/P2787) 
 -    [「Luogu 4979」矿洞：坍塌](https://www.luogu.com.cn/problem/P4979) 
